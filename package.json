@@ -1,0 +1,27 @@
+{
+  "name": "podcast-parser",
+  "version": "1.0.0",
+  "description": "A CLI tool to parse podcast RSS feeds, download episodes, and generate markdown files",
+  "type": "module",
+  "main": "podcast-parser.mjs",
+  "scripts": {
+    "start": "node ./main.mjs",
+    "lint": "eslint . --ext .mjs --fix",
+    "prettier": "prettier --write '**/*.{mjs,json}'"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "music-metadata": "^8.1.4",
+    "rss-parser": "^3.10.0",
+    "turndown": "^7.1.1",
+    "yargs": "^17.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7"
+  }
+}
