@@ -26,7 +26,7 @@ pnpm install
 ## Usage
 
 ```bash
-node main.mjs [options]
+node index.mjs [options]
 ```
 
 #### Options
@@ -41,18 +41,18 @@ node main.mjs [options]
 ### Examples
 Download MP3 files and generate Markdown files for a podcast feed:
 ```bash
-node main.mjs --feed-url https://example.com/podcast/feed.xml
+node index.mjs --feed-url https://example.com/podcast/feed.xml
 ```
 Download MP3 files only:
 ```bash
-node main.mjs --feed-url https://example.com/podcast/feed.xml --no-md
+node index.mjs --feed-url https://example.com/podcast/feed.xml --no-md
 ```
 Generate Markdown files only:
 ```bash
-node main.mjs --feed-url https://example.com/podcast/feed.xml --no-mp3
+node index.mjs --feed-url https://example.com/podcast/feed.xml --no-mp3
 ```
 Customize download folders:
 ```bash
-node main.mjs --feed-url https://example.com/podcast/feed.xml --mp3-folder ./downloads/mp3 --md-folder ./downloads/markdown
+node index.mjs --feed-url https://example.com/podcast/feed.xml --mp3-folder ./downloads/mp3 --md-folder ./downloads/markdown
 ```
 

@@ -2,7 +2,7 @@
 
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import processPodcast from "./podcast-manager.mjs";
+import processPodcast from "./src/podcast-manager.mjs";
 
 const { argv } = yargs(hideBin(process.argv))
   .option("feed-url", {
